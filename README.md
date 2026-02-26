@@ -1,9 +1,7 @@
 # Async FastAPI LLM Service – Schema Validated JSON
 
 **Overview:**
-This project is a production-style FastAPI service that calls an LLM and returns
-strictly schema-validated structured JSON using Pydantic.
-
+This project is a production-style FastAPI service that calls an LLM and returnsstrictly schema-validated structured JSON using Pydantic.
 It is designed with clean separation of concerns, environment-based configuration,
 retry handling, and domain-aware prompt construction to ensure deterministic outputs.
 
@@ -33,10 +31,13 @@ app/
 **Execution Steps:**
 
 pip install -r requirements.txt
+
 GROQ_API_KEY=your_api_key
+
 MODEL_NAME=llama-3.1-8b-instant
 
 uvicorn app.main:app --reload
+
 
 
 
