@@ -20,9 +20,13 @@ retry handling, and domain-aware prompt construction to ensure deterministic out
 
 **Project Structure**
 app/
+
 ├── api/        # Route definitions
+
 ├── core/       # Config and LLM service layer
+
 ├── schemas/    # Pydantic models
+
 └── main.py     # FastAPI entry point
 
 **Execution Steps**
@@ -32,4 +36,5 @@ GROQ_API_KEY=your_api_key
 MODEL_NAME=llama-3.1-8b-instant
 
 uvicorn app.main:app --reload
+
 
