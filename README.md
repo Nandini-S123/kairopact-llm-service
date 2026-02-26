@@ -15,6 +15,9 @@ retry handling, and domain-aware prompt construction to ensure deterministic out
 - Domain-aware prompt builder to remove acronym ambiguity
 - Health check endpoint
 - Graceful fallback when LLM is unavailable
+
+
+
 **Project Structure**
 app/
 ├── api/        # Route definitions
@@ -29,3 +32,4 @@ GROQ_API_KEY=your_api_key
 MODEL_NAME=llama-3.1-8b-instant
 
 uvicorn app.main:app --reload
+
